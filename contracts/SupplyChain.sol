@@ -86,7 +86,8 @@ function AddProduct(
     string memory price,
     string memory description,
     string memory reqtemp,
-    string memory manufacturing) public payable
+    string memory manufacturing,
+    uint256 timestamp) public payable
 {
     productInfo=Product(product_id,name,price,description,reqtemp,manufacturing,block.timestamp);
     products[product_id]=(productInfo);
