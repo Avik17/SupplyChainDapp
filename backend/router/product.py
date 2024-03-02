@@ -46,7 +46,7 @@ def index(id:int):
 
 @router.post('/')
 def index(product: Product):
-    return AddProduct(product.name, product.price,  product.description,product.reqtemp,product.manufacturing,product.timestamp)
+    return AddProduct(product.name, product.price,  product.description,product.reqtemp,product.manufacturing)
 
 @router.post('/status')
 def index(status:Status):
